@@ -1,8 +1,10 @@
+/* style.css */
+
 :root {
-  --primary: #232946;
-  --secondary: #eebbc3;
-  --accent: #3da9fc;
-  --background: #f4f6fb;
+  --primary: #232946; /* Dark Navy */
+  --secondary: #eebbc3; /* Pastel Pink (Highlight) */
+  --accent: #3da9fc; /* Bright Blue (Action/CTA) */
+  --background: #f4f6fb; /* Light background */
   --text: #232946;
   --white: #fff;
   --hero-gradient: linear-gradient(135deg, #3da9fc 0%, #eebbc3 100%);
@@ -15,7 +17,8 @@
 }
 
 body {
-  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  /* Link this font in your HTML header! */
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; 
   background: var(--background);
   color: var(--text);
   min-height: 100vh;
@@ -138,7 +141,7 @@ main {
   box-shadow: 0 8px 32px rgba(61, 169, 252, 0.13);
   border-color: var(--accent);
 }
-.projects .project h2 {
+.projects .project h3 { /* Changed from h2 to h3 for consistency */
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
@@ -240,10 +243,22 @@ h1, h2, h3 {
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  color: var(--primary); /* Apply primary color to headers */
 }
 
 ul, ol {
   margin-left: 1.5rem;
+  list-style-type: none; /* Removed default list style for custom styling */
+}
+
+/* Custom list item styling (optional, but looks cleaner) */
+ul li::before {
+    content: "•";
+    color: var(--accent);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 @media (max-width: 900px) {
@@ -274,4 +289,4 @@ ul, ol {
   #contact-form {
     padding: 1rem 0.5rem;
   }
-} 
+}

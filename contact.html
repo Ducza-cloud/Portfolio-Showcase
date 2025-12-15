@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Duduzile Mgcina</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Duduzile Mgcina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Duduzile Mgcina</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">D.M.</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="contact">
-      <h1>Contact Me</h1>
-      <form id="contact-form" action="https://formspree.io/f/movldekr" method="POST">
-  <!-- Redirects user to thankyou.html after form submission -->
-  <input type="hidden" name="_redirect" value="thankyou.html">
+    <main>
+        <section class="contact">
+            <h1>Get In Touch</h1>
+            <p style="text-align: center;">I am actively seeking new opportunities and challenges. Please feel free to reach out!</p>
 
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            
+            <div class="social-links">
+                [cite_start]<a href="https://www.linkedin.com/in/duduzile-mgcina-377b29211/" target="_blank">LinkedIn</a> [cite: 8]
+                <a href="https://github.com/Ducza-cloud" target="_blank">GitHub</a>
+                [cite_start]<a href="mailto:ductualingchal@gmail.com">Email</a> [cite: 4]
+            </div>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
+            [cite_start]<p style="text-align: center; margin-top: 1.5rem;">Phone: 0838732650 [cite: 4]</p>
+        </section>
+    </main>
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <button type="submit">Send</button>
-</form>
-
-
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/duduzile-mgcina-377b29211/" target="_blank">🔗 LinkedIn</a> |
-        <a href="https://github.com/Ducza-cloud" target="_blank">💻 GitHub</a> |
-        <a href="mailto:duduzilemgcina0@gmail.com">✉️ Email</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Duduzile Mgcina. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+        &copy; <span id="current-year-5"></span> Duduzile Mgcina. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById('current-year-5').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
